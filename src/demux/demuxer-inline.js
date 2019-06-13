@@ -75,9 +75,9 @@ class DemuxerInline {
       const config = this.config;
       // probing order is TS/MP4/AAC/MP3
       const muxConfig = [
-        { demux: TSDemuxer, remux: MP4Remuxer },
-        { demux: MP4Demuxer, remux: PassThroughRemuxer },
-        { demux: AACDemuxer, remux: MP4Remuxer },
+        // { demux: TSDemuxer, remux: MP4Remuxer },
+        // { demux: MP4Demuxer, remux: PassThroughRemuxer },
+        // { demux: AACDemuxer, remux: MP4Remuxer },
         { demux: MP3Demuxer, remux: MP4Remuxer }
       ];
 
